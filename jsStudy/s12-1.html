@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="first"></h1>
+
+    <ul>
+      <!-- class 속성값은 페이지에서 여러 번 사용해도 된다 -->
+      <li class="my-li"></li>
+      <li class="my-li"></li>
+      <li class="my-li"></li>
+    </ul>
+
+    <h1 class="second"></h1>
+
+    <script>
+      // querySelector는 css 선택자를 이용해서 단일 태그를 가져온다.
+      const firstTag = document.querySelector("#first");
+      firstTag.innerHTML = "첫번째입니다.";
+
+      // querySelectorAll은 css선택자를 이용해서 태그 리스트를 가져온다.
+      const myLiTagList = document.querySelectorAll(".my-li");
+      for (let i = 0; i < myLiTagList.length; i++) {
+        myLiTagList[i].innerText = `${i}. 상품${i}`;
+      }
+
+    //   querySelector가 단일 태그를 가져오는 점을 이용해서 class 선택자로도 태그 하나만을 가져와서 사용할 수 있다.
+      const secontTag = document.querySelector(".second");
+      secontTag.innerText = "두번쨰입니다.";
+    </script>
+  </body>
+</html>

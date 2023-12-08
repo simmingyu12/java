@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 할 일
+        // 세탁기 돌리기 - 세탁기 끝나면 빨래감 널기 - 라면 먹기
+        
+        // 세탁기 돌리기 시작할 때 "세탁을 시작합니다" 메시지 출력
+        // 세탁기 돌리기를 promise로 진행하고 세탁기가 다돌아가면 "빨래감을 널겟습니다" 메세지 출력
+        // 라면 다 먹으면 "라면을 먹엇습니다."
+
+        // const bool =true;
+
+        // console.log("세탁을 시작합니다.")
+
+        // const promise = new Promise((resolve, reject) => {
+        //     if(bool){
+        //         resolve("빨래감을 널었습니다.")
+        //     }else{
+        //         reject("세탁기 고장");
+        //     }
+        // });
+
+        // promise
+        // .then((value) => {
+        //     console.log(value);
+        // })
+        // .catch((value) => {
+        //     console.log(value);
+        // });
+        // console.log("라면을 먹었습니다.");
+
+
+
+        //reject가 없을시 생략해도된다.
+        // console.log("세탁 시작");
+        // new Promise((resolve) =>{
+        //     resolve("빨래 완료");
+        // }).then(() => {
+        //     console.log("빨래를 널었다.")
+        // });
+        // console.log("라면을 먹엇다.")
+
+        console.log("세탁 시작");
+        new Promise((resolve) => {
+            setTimeout(() => {
+                resolve("세탁 완료");
+            }, 5000);
+        }).then((value) => {
+            console.log(value);
+            console.log("빨래를 널어볼까");
+        })
+        console.log("라면을 먹자")
+        new Promise((resolve) => {
+            setTimeout(() =>{
+                resolve("라면 다먹음")
+            }, 2000);
+        }).then((value) => {
+            console.log("라면 끓이는 중")
+            console.log(value);
+        });
+
+
+        
+
+    </script>
+
+</body>
+</html>

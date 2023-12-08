@@ -1,0 +1,31 @@
+<script>
+
+    //전개 연산자
+    //배열이나 객체의 요소를 뿌린다. 
+    const intArray = [10,20,30];
+
+    const secondArray = [...intArray, 40];
+    console.log(secondArray);
+
+    const obj = {
+        name : "대상혁",
+        age : 1557,
+    }
+
+    const secondobj = {
+        ...obj,
+        team : "T2",
+    }
+
+    console.log(secondobj);
+
+    const thirdobj = {
+        ...obj,
+        age : 1601,
+    }
+
+    console.log(thirdobj);
+
+    const {name, ...remainObj } = secondobj;
+    console.log(remainObj);
+</script>

@@ -1,0 +1,27 @@
+<script>
+  // 구조분해 할당
+
+  // 배열의 구조분해 할당
+  const intArray = [10, 20, 30];
+  //   console.log(intArray[0]);
+
+  const [first, second, asdf] = intArray;
+  console.log(first);
+  console.log(second);
+  console.log(asdf);
+
+  //순서가 중요해서 0번째부터 변수가 할당된다.
+  //2번째 배열값을 가져올라면 0번째 1번째 값들고 가져와야한다.
+
+
+    //객체의 구조분해 할당
+
+    const obj = {
+        name : "홍길동",
+        age : 12,
+    };
+    // 객체를 구조분해할당 할때에는 이름이 중요하다.
+    const {age, name} = obj;
+    console.log(age);
+    console.log(name);
+</script>

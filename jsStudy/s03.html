@@ -1,0 +1,26 @@
+<script>
+  const obj = {
+    name: "홍길동",
+    age: 12,
+
+    getname() {
+      return this.name;
+    },
+
+    getname1: function () {
+      return this.name;
+    },
+
+    getname2: () => this.name,
+  };
+
+  class Cat {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+  }
+
+  const cat = new Cat("남", 12);
+  console.log(cat.name);
+</script>

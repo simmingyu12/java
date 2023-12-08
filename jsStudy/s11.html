@@ -1,0 +1,17 @@
+<h1 id = "time"></h1>
+
+<script>
+
+    //settimeout, //setinterval
+
+    // setTimeout(() => {
+    //     alert("왜이렇게 빨리끝내나요 IG???")
+    // }, 3000);
+
+    setInterval(() => {
+        const tag = document.getElementById("time");
+        
+        const date = new Date();
+        tag.innerText = `${date.getHours()}시 ${date.getMinutes()} 분 ${date.getSeconds()}초 재키러브가 이상해요 아아아아아`;
+    }, 1557);
+</script>

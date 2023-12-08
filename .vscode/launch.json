@@ -1,0 +1,245 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "S01",
+            "request": "launch",
+            "mainClass": "S01",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S02",
+            "request": "launch",
+            "mainClass": "S02",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S03",
+            "request": "launch",
+            "mainClass": "S03",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S04",
+            "request": "launch",
+            "mainClass": "S04",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S05",
+            "request": "launch",
+            "mainClass": "S05",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S07",
+            "request": "launch",
+            "mainClass": "S07",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S08",
+            "request": "launch",
+            "mainClass": "S08",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S09",
+            "request": "launch",
+            "mainClass": "S09",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S10",
+            "request": "launch",
+            "mainClass": "S10",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "Study11",
+            "request": "launch",
+            "mainClass": "Study11",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S01(1)",
+            "request": "launch",
+            "mainClass": "chap07.S01",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S04(1)",
+            "request": "launch",
+            "mainClass": "chap07.S04",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S05(1)",
+            "request": "launch",
+            "mainClass": "chap07.S05",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S07(1)",
+            "request": "launch",
+            "mainClass": "chap07.S07",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S08(1)",
+            "request": "launch",
+            "mainClass": "chap07.S08",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S08Quiz",
+            "request": "launch",
+            "mainClass": "chap07.S08Quiz",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S09(1)",
+            "request": "launch",
+            "mainClass": "chap07.S09",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S10(1)",
+            "request": "launch",
+            "mainClass": "chap07.S10",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S01(2)",
+            "request": "launch",
+            "mainClass": "chap08.S01",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S02(1)",
+            "request": "launch",
+            "mainClass": "chap08.S02",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S03(1)",
+            "request": "launch",
+            "mainClass": "chap08.S03",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S04(2)",
+            "request": "launch",
+            "mainClass": "chap08.S04",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S05(2)",
+            "request": "launch",
+            "mainClass": "chap08.S05",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S01(3)",
+            "request": "launch",
+            "mainClass": "chap09.S01",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S02(2)",
+            "request": "launch",
+            "mainClass": "chap09.S02",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S03(2)",
+            "request": "launch",
+            "mainClass": "chap10.S03",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S01(4)",
+            "request": "launch",
+            "mainClass": "chap11.S01",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S02(3)",
+            "request": "launch",
+            "mainClass": "chap11.S02",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S03(3)",
+            "request": "launch",
+            "mainClass": "chap11.S03",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S04(3)",
+            "request": "launch",
+            "mainClass": "chap11.S04",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S05(3)",
+            "request": "launch",
+            "mainClass": "chap11.S05",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S06",
+            "request": "launch",
+            "mainClass": "chap11.S06",
+            "projectName": "vacation_2492ed95"
+        },
+        {
+            "type": "java",
+            "name": "S01(5)",
+            "request": "launch",
+            "mainClass": "chap12.S01",
+            "projectName": "vacation_2492ed95"
+        }
+    ]
+}

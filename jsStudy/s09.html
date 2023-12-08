@@ -1,0 +1,63 @@
+<script>
+  //배열의 foreach와 비슷한 매서드들
+
+  const array = [
+    { name: "홍길동", age: 12 },
+    { name: "임꺽정", age: 13 },
+  ];
+
+  //배열의 데이터를 반복하는데 결과값이 필요없읅 경우
+  array.forEach((value, index, array) => {
+    console.log(value);
+  });
+
+  //filter 배열의 데이터를 반복하는데 조건에 맞는 요소만 걸러낼 때 사용
+  //함수를 매개변수를 받는데 (콜백함수) return 값이 true 나 false 여야한다.
+  // 콜백함수의 return값이 true면 리스트에 남고 false면 필터링된다.
+  const check = (value, index, array) => {
+    return value.age > 12;
+  };
+
+  const result1 = array.filter(check);
+  console.log("result1");
+  console.log(result1);
+
+  //map 배열의 데이터를 반복하는데
+  // 기존의 데이터 형식을 다른 형식으로 변경할 때 사용
+  // 함수 매개변수를 받는데(콜백함수) return 값이 어느 것이든 될 수 있다.
+  //map은 객체 Map하고 전혀 상관이 없으니 주의
+  // 기존의 객체 배열 -> 이름만 있는 문자열 배열로 전환
+  const result2 = array.map((value, index, array) => {
+    return value.name;
+  });
+  console.log("result2");
+  console.log(result2);
+
+  // 연습 
+  const humanArray = [
+    {name : "홍길동", age : 24},
+    {name : "이영빈", age : 1557},
+  ];
+//   forEach- name님 안녕하세요 반복출력
+humanArray.forEach((value) => {
+    console.log(value.name + "님 반갑다.");
+  });
+
+//   filter 이름에 길자가 들어간 사람만 남기기
+  const gillname = humanArray.filter((value) => {
+    return value.name.includes("길");
+  });
+  console.log(gillname);
+
+//   map 나이만 뽑아서 숫자 배열 만들기
+const humanage = humanArray.map((value,index,array) =>{
+    return value.age;
+});
+console.log(humanage);
+
+
+
+
+  
+
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <ul id = "movieList"></ul>
+    <script>
+      fetch(
+        "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20230707"
+      )
+        .then((re) => re.json())
+        .then((rs) => {
+            rs.boxOfficeResult.dailyBoxOfficeList.forEach((value) => {
+              document
+                .querySelector("#movieList")
+                .insertAdjacentHTML(
+                  "beforeend",
+                  `<li>${value.rank} / 제목 : ${value.movieNm}</li>`
+                );
+            });
+        });
+        
+    </script>
+  </body>
+</html>

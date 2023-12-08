@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //프로미스 내에서 작업을 하고
+        //작업이 성공하면 resolve를 실행, 작업이 실패하면 reject를 실행
+
+        const bool = false;
+
+        const promise = new Promise((resolve,reject) => {
+            if(bool){
+                resolve("작업성공");
+            }else{
+                reject("작업실패");
+            }
+        });
+
+        //promise가 resolve로 결과가 나오면 then 안에 있는 콜백함수가 실행된다.
+        //promise가 reject로 결과가 나오면 cahch안에 있는 콜백함수가 실행된다.
+        //promise가 결과가 resolve든 reject든 상관없이 finally안에 있는 콜백함수가 실행된다.
+        promise
+        .then((value) => {
+            console.log(value);
+        })
+        .catch((value) => {
+            console.log(value);
+        })
+        .finally(() =>{
+            console.log("finally : 무슨 일이 있어도 실행");
+        });
+
+        console.log("프로미스 작성 이후 실행");
+    </script>
+</body>
+</html>

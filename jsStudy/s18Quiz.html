@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .white {
+        background-color: white;
+      }
+      .black {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="change">색깔 변경</button>
+
+    <script>
+      //body의 배경을 흰색 검은색
+      //style, class
+      //변경 버튼을 누르면 흰색 검은색 토글
+      //이벤트리스너
+      //새로고침해도 유지
+      //로컬 스토리지 (객체,json 안써도 됨, 문자열 사용)
+
+      document.querySelector(".change").addEventListener("click", () => {
+        if (document.body.classList.contains("black")) {
+          document.body.classList.remove("black");
+          document.body.classList.remove("white");
+0
+          document.body.classList.add("white");
+          localStorage.setItem("theme", "white");
+        } else {
+          document.body.classList.remove("white");
+          document.body.classList.remove("black");
+
+          document.body.classList.add("black");
+          localStorage.setItem("theme", "black");
+        }
+      });
+
+      const setBackColor = () => {
+        if(localStorage.getItem("theme") === "black"){
+            document.body.classList.add("black");
+        }else{
+            document.body.classList.add("white");
+        }
+      }
+
+      setBackColor();
+    </script>
+  </body>
+</html>

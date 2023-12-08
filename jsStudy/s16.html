@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="first" onclick="alert('첫번째클릭')">첫번째</h1>
+    <h1 id="second" ondblclick="alert('더블클릭')">더블클릭</h1>
+
+    <h1 id="third">세번째</h1>
+
+    <h1 id="fourth">네번째</h1>
+    <script>
+      //이벤트 : 화면에 유저의 입력 등 움직임을 주는 것들
+      //마우크스 ,키보드 , 음성, 카메라 등등
+      //마우스 이벤트
+
+      const third = document.querySelector("#third");
+      //js로 태그의 프로퍼티에 함수를 넣을 떄에는 실행결과 alert("...")로 사용하지말것
+      //실행을 할 수 있는 함수 () = > {alert(...)} 를 대입해야한다.
+      third.onclick = () => {
+        alert("세번째");
+      };
+
+      // 프로퍼티를 null로 만들면 기능을 없앨 수 있다.
+      third.onclick = null;
+
+      // addEventListener는 첫번째 매개변수가 on이 빠져있는 이벤트 이름을 넣고
+      // 두번째 매개변수가 실행을 할 수있는 함수를 넣는다.
+      const fourth = document.querySelector("#fourth");
+      fourth.addEventListener("click", () => {
+        alert("네번쨰");
+      });
+
+      // 이벤트 리스너는 여러개가 달릴 수 있다.
+      fourth.addEventListener("click", () => {
+        alert("또네번째");
+      });
+
+      // 이벤트 리스너는 함수로 만든다음에 두번째 매개변수에 함수명을 넣을 수 있다.
+      const clickEvent = () => {
+        alert("난도모난도모난도모 네번째3");
+      };
+      fourth.addEventListener("click", clickEvent);
+
+      // 이벤트리스너 제거
+      fourth.removeEventListener("click", clickEvent);
+
+      document.querySelector("#first").addEventListener("click", ()=>{
+        alert("크아아아");
+      })
+
+
+    </script>
+  </body>
+</html>

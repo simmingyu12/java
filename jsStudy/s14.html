@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- beforebegin -->
+    <ul id="list">
+      <!-- afterbegin -->
+
+      <!-- beforeend -->
+    </ul>
+    <!-- afterend -->
+
+    <script>
+      //id가 list인 ul을 가져온다.
+      const list = document.querySelector("#list");
+      //ul 안에 li를 넣는다.
+      // 문자열로 태그 안에 자식 태그를 넣는 방법
+      list.innerHTML = `<li id = "item1" style = "color:red;">바나나</li><li>사과</li>`;
+
+      // 자바 스크립트에서 태그르 만들어서 넣는 방법
+      const li1 = document.createElement("li");
+      li1.innerText = "맥도날드";
+      const li2 = document.createElement("li");
+      li2.innerText = "빅맥";
+
+      list.appendChild(li1);
+      list.appendChild(li2);
+
+      // list에 반복문과 createElemnet, appendChild 이용해서 li추가
+      const 과일리스트 = ["멜론", "수박", "딸기"];
+
+      for (let i = 0; i < 과일리스트.length; i++) {
+        const li3 = document.createElement("li");
+        li3.innerText = 과일리스트[i];
+        list.appendChild(li3);
+      }
+
+      // foreach문 사용하기
+      과일리스트.forEach((value) => {
+        const li4 = document.createElement("li");
+        li4.innerText = value;
+        list.appendChild(li4);
+      });
+
+      // insertAdjacentHtml
+      // 문자열로 태그를 만들어서 추가시킬 수 있다.
+      // 태그를 넣는 위치도 고를 수 있다.
+      list.insertAdjacentHTML("beforeend", `<li>무화과</li>`);
+      list.insertAdjacentHTML("afterbegin", `<li>오렌지</li>`);
+
+      const 과일리스트1 = ["망고", "귤", "한라봉"];
+      // insertAdjacentHTML, foreach 사용해서 추가
+      
+      과일리스트1.forEach((value) => {
+        list.insertAdjacentHTML("afterend",
+        `<li>${value}</li>`)
+      });
+    </script>
+  </body>
+</html>
